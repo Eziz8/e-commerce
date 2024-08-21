@@ -240,9 +240,10 @@ main {
 }
 
 .smartphones-section,
-.top-categories,
-.daily-essentials {
-  margin-top: 115px;
+.top-categories-section,
+.daily-essentials,
+.brands-section {
+  margin: 115px 0px;
 }
 
 .section-info {
@@ -259,8 +260,9 @@ main {
 }
 
 .smartphones-section span,
-.top-categories span,
-.daily-essentials span {
+.top-categories-section span,
+.daily-essentials span,
+.brands-section span {
   color: var(--clr-blue);
 }
 
@@ -278,11 +280,13 @@ main {
 
 .phone-card-wrapper,
 .ctg-card-wrapper,
-.essentials-card-wrapper {
+.essentials-card-wrapper,
+.brands-card-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 15px;
 }
 
 .phone-card {
@@ -385,7 +389,7 @@ main {
   border-radius: 15px;
 }
 
-.essentials-card img{
+.essentials-card img {
   max-width: 151px;
   max-height: 151px;
 }
@@ -396,4 +400,90 @@ main {
   font-weight: 700;
   line-height: 15px;
   color: var(--clr-dark);
+}
+
+.brand-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 355px;
+  height: 205px;
+  padding: 25px;
+  position: relative;
+  border-radius: 15px;
+}
+
+.brand-card:nth-child(1) {
+  background-color: #313131;
+}
+
+.brand-info {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 19px;
+}
+
+.brand-info > div {
+  padding: 9px 15px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16.8px;
+  letter-spacing: 0.1em;
+  background-color: #494949;
+  border-radius: 7px;
+}
+
+.brand-info img {
+  width: 55px;
+  height: 55px;
+}
+
+.brand-info h3 {
+  font-size: 15px;
+  font-weight: 600;
+  line-height: 15px;
+  color: var(--clr-white);
+}
+
+.brand-img img {
+  max-width: 175px;
+  max-height: 275px;
+  position: absolute;
+  z-index: 1;
+  top: 15px;
+  right: 15px;
+}
+
+.brand-art {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.brand-card:nth-child(2) {
+  background-color: #fff3cc;
+}
+
+.brand-card:nth-child(2) .brand-info div {
+  background-color: var(--clr-light-yellow);
+}
+
+.brand-card:nth-child(2) .brand-info img {
+  width: 105px;
+  height: 55px;
+}
+
+.brand-card:nth-child(2) .brand-info h3,
+.brand-card:nth-child(3) .brand-info h3
+ {
+  color: var(--clr-dark);
+}
+
+.brand-card:nth-child(3) {
+  background-color: #ffecdf;
+}
+
+.brand-card:nth-child(3) .brand-info div {
+  background-color: #ffd1b0;
 }
