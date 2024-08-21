@@ -239,7 +239,9 @@ main {
   z-index: 1;
 }
 
-.smartphones-section {
+.smartphones-section,
+.top-categories,
+.daily-essentials  {
   margin-top: 115px;
 }
 
@@ -256,7 +258,9 @@ main {
   border-bottom: 3px solid var(--clr-blue);
 }
 
-.smartphones-section span {
+.smartphones-section span,
+.top-categories span,
+.daily-essentials span {
   color: var(--clr-blue);
 }
 
@@ -272,7 +276,10 @@ main {
   color: var(--clr-dark);
 }
 
-.phone-card-wrapper {
+.phone-card-wrapper,
+.ctg-card-wrapper,
+.daily-essentials {
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 15px;
@@ -290,18 +297,25 @@ main {
   justify-content: center;
   padding: 15px 0px;
   background-color: var(--clr-light-bg);
-  
+  border-radius:15px 15px 0px 0px ;
+}
+
+.phone-img img{
+  height: 158px;
+  object-fit: cover;
 }
 
 .phone-info {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
   padding: 15px;
-  gap: 15px;
 }
 
 .phone-info h5 {
-  font-size: 16px;
+  font-size: 15px;
   font-weight: 600;
-  line-height: 18px;
+  line-height: 17px;
 }
 
 .phone-price{
@@ -318,11 +332,37 @@ main {
   font-weight: 300;
 }
 
-.phone-info h5:nth-child(3){
+.phone-info h5:nth-child(4){
   font-weight: 500;
   color: var(--clr-green);
 }
 
 .overline {
   text-decoration: line-through;
+}
+
+.ctg-card{
+  width: 133px;
+  height: 173px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap:25px;
+}
+
+.ctg-img{
+  width: 100%;
+  height: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+
+.ctg-card h3{
+font-size: 16px;
+font-weight: 500;
+line-height: 20px;
+color: var(--clr-blue);
 }
