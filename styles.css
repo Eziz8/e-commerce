@@ -241,7 +241,7 @@ main {
 
 .smartphones-section,
 .top-categories,
-.daily-essentials  {
+.daily-essentials {
   margin-top: 115px;
 }
 
@@ -278,11 +278,11 @@ main {
 
 .phone-card-wrapper,
 .ctg-card-wrapper,
-.daily-essentials {
+.essentials-card-wrapper {
   width: 100%;
   display: flex;
   align-items: center;
-  gap: 15px;
+  justify-content: space-between;
 }
 
 .phone-card {
@@ -297,10 +297,10 @@ main {
   justify-content: center;
   padding: 15px 0px;
   background-color: var(--clr-light-bg);
-  border-radius:15px 15px 0px 0px ;
+  border-radius: 15px 15px 0px 0px;
 }
 
-.phone-img img{
+.phone-img img {
   height: 158px;
   object-fit: cover;
 }
@@ -318,21 +318,21 @@ main {
   line-height: 17px;
 }
 
-.phone-price{
+.phone-price {
   display: flex;
   align-items: center;
   gap: 25px;
 }
 
-.phone-info h5:nth-child(1){
+.phone-info h5:nth-child(1) {
   font-family: 200;
 }
 
-.phone-price h5:nth-child(2){
+.phone-price h5:nth-child(2) {
   font-weight: 300;
 }
 
-.phone-info h5:nth-child(4){
+.phone-info h5:nth-child(4) {
   font-weight: 500;
   color: var(--clr-green);
 }
@@ -341,28 +341,59 @@ main {
   text-decoration: line-through;
 }
 
-.ctg-card{
+.ctg-card {
   width: 133px;
   height: 173px;
   display: flex;
   flex-direction: column;
   text-align: center;
-  gap:25px;
+  gap: 25px;
 }
 
-.ctg-img{
+.ctg-img {
   width: 100%;
   height: 75%;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
 }
 
-.ctg-card h3{
-font-size: 16px;
-font-weight: 500;
-line-height: 20px;
-color: var(--clr-blue);
+.ctg-card h3 {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  color: var(--clr-blue);
+}
+
+.essentials-card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.essentials-img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 157px;
+  height: 157px;
+  margin-bottom: 19px;
+  padding: 5px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+.essentials-card img{
+  max-width: 151px;
+  max-height: 151px;
+}
+
+.essentials-card h3 {
+  margin-top: 5px;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 15px;
+  color: var(--clr-dark);
 }
